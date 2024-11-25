@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+header .imh-contato button, .hero-imh button {
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
+}
+
+/*Estilo do botão do menu mobile */
+
+header .btn-menu-mob {
+ 
+  position: relative;
+  z-index: 999999999999999999999;
+}
+
+.btn-menu-mob div {
+  background-color: #fff;
+  height: 3px;
+  margin: 10px 0;
+  transition: .2s;
+}
+.btn-menu-mob .line-menumob-1{
+  width: 30px;
+}
+.btn-menu-mob .line-menumob-2{
+  width: 20px;
+}
+
+/* Estilo do menu mobile */
+
+
+
+.menu-mobile {
+  width: 0;
+  height: 0;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile nav {
+  width: 100%;
+}
+
+.menu-mobile nav ul {
+  list-style-type: none;
+}
+
+.menu-mobile nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0;
+  display: block;
+  transition: .5s;
+}
+
+.menu-mobile nav a:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 20px#fff;
+}
+
+header .menu-mobile.abrir{
+  width: 100%;
+  height: 100vh;
+} 
+
+body .no-overflow {
+  overflow: hidden;
+}
+
+/*Estilo do header */
+header{
+  width: 100%;
+  padding: 30px 0;
+  position: fixed;
+  background-color: #2D548F;
+  top: 0;
+  left: 0;
+
+}
+
+header .interface{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 60px;
+  
+}
+
+header .menu-desktop nav ul {
+  list-style-type: none;
+}
+
+header .menu-desktop nav ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+ .menu-desktop nav a:hover {
+  transform: scale(1.05);
+}
+
+header .imh-contato button {
+  width: 140px;
+  height: 50px;
+}
+
+header .imh-contato button:hover, .hero-imh button:hover {
+  background-color: #fff;
+  color: #000;
+}  
+
+header .imh-contato button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Estilo do hero*/
+section.hero-imh {
+  height: 98vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../imagens/Imagem\ 167.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-imh .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-imh .txt-imh h1 {
+  font-size: 4em;
+  font-weight: 200;
+  line-height: 70px
+}
+
+.hero-imh .txt-imh h1 span {
+  display: block;
+  font-weight: 800;
+}
+
+.hero-imh .txt-imh p{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hero-imh button {
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.carro {
+  border-radius: 15px;
+  box-shadow: 6px 6px 0 #05117a;  
+}
+
+/*Estilo das vantagens */
+.vantagens {
+  padding: 80px 0;
+}
+
+.vantagens .itens-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img {
+  max-width: 480px;
+}
+
+.vantagens .itens-container .txt-itens h3{
+  font-size: 3em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span {
+  font-weight: 200;
+}
+
+/* Estilos dos botões de contato*/
+.contato {
+  background-color: whitesmoke;
+  padding: 80px 0;
+}
+
+.txt-contato, .icons-contato {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.contato .icons-contato a{
+  text-decoration: none;
+}
+
+.contato .icons-contato button {
+  display: flex;
+  width: 60%;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  padding: 0 60px;
+
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contato .icons-contato button i {
+  font-size: 20px;
+}
+
+.contato .icons-contato button:hover {
+  background-color: black;
+}
+
+.contato .icons-contato button:hover i{
+  color: #fff;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p {
+  color: #fff;
+}
+
+.btn-menu-mob  .line-menumob-1.ativo1{
+  transform: rotate(45deg) translate(30%);
+}
+.btn-menu-mob  .line-menumob-2.ativo2{
+  transform: rotate(-45deg) translate(30%);
+  width: 30px;
+}
