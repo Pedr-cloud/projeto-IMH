@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+  
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/responsive.css" media="screen">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--Whatsapp-->
+  <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"> <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=2732271164&text=Com%20que%20posso%20te%20ajudar?"> <div class="rwb-tooltip">Fale Conosco!</div> <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"> </a>
+  <!--/Whatsapp-->
+
+  <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--/font awesome-->
+
+  <!--Script JS-->
+  <script src="js/menu.js" defer></script>
+  <script src="js/btn-menu-mob.js" defer></script>
+  <!--/Script JS-->
+  s
+  <title>TECH DAY</title>
+</head>
+<body>
+  <header>
+    
+    
+    <div class="interface">
+
+      <section class="logo">
+        <img src="imagens/FÉ.png" alt="Logotipo do site">
+      </section>
+
+      <section class="menu-desktop">
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Matrículas</a></li>
+            <li><a href="#">Calendário Letivo</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="imh-contato">
+        
+        <button class="btn-contato" onclick="location.href='#contato'">Contato</button>
+      </section>
+
+      <div class="btn-menu-mob" id="btn-menu-mob">
+        <div class="line-menumob-1"></div>
+        <div class="line-menumob-2"></div>
+      </div>
+
+      <section class="menu-mobile" id="menu-mobile">
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Matrículas</a></li>
+            <li><a href="#">Calendário Letivo</a></li>
+          </ul>
+        </nav>
+      </section>
+
+    </div>
+  </header>
+
+  <section  class="hero-imh">
+
+    <div class="interface">
+      <div class="txt-imh">
+        <h1>EEEM <span id="irma">IRMÃ</span> <span id="maria">MARIA</span> <span id="horta">HORTA</span></h1>
+        <p>Uma escola que inspira sonhos e transforma futuros!</p>
+          <button class="btn-contato" onclick="location.href='#vantagens'">Quero conhecer</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="vantagens" id="vantagens">
+    <div class="interface">
+      <article class="itens-container">
+
+        <div class="txt-itens item-1">
+          <h3><span>Aqui seu futuro</span><br>ganha forma</h3>
+          <p>Na Escola Irmã Maria Horta, transformamos suas habilidades em conquistas reais. Venha construir seu futuro com a gente!</p>
+        </div>
+
+        <div class="img-itens">
+          <img src="imagens/meninas sorrindo para a câmera.JPG" class="carro" alt="">
+        </div>
+
+      </article>
+
+      <article class="itens-container">
+
+        <div class="img-itens item-2">
+          <img src="imagens/dedessa 2012.jpg" class="carro" alt="">
+        </div>
+
+        <div class="txt-itens">
+          <h3><span>O Ensino que Faz</span><br> a Diferença!</h3>
+          <p>Mais do que ensinar, moldamos cidadãos preparados para vencer desafios e conquistar seus sonhos.</p>
+        </div>
+
+      </article>
+
+      <article class="itens-container">
+
+        <div class="txt-itens">
+          <h3><span>Seu Lugar é</span> Aqui!</h3>
+          <p>Descubra um ambiente acolhedor e inspirador, onde o aprendizado acontece de forma inovadora e transformadora. Faça parte dessa história!</p>
+        </div>
+
+        <div class="img-itens">
+          <img src="imagens/menina dando joinha.JPG" class="carro" alt="">
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+  <section class="contato">
+    <div class="interface">
+      <article class="txt-contato">
+        <h3>Entre em Contato e <span>Garanta o Melhor para o Futuro do Seu Filho!</span></h3>
+        <p>Transforme sonhos em realidade. Faça parte da nossa escola!</p>
+      </article>
+
+      <article class="icons-contato" id="contato">
+        <a href="https://www.instagram.com/irmamariahorta/" target="_blank">
+          <button><i class="fa-brands fa-instagram"></i> <p>Instagram</p></button>
+        </a>
+        <a href="#">
+          <button><i class="fa-solid fa-envelope"></i> <p>Enviar e-mail</p></button>
+        </a>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

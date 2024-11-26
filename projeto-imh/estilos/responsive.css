@@ -1,0 +1,80 @@
+
+
+@charset "UTF-8";
+
+@media screen and (max-width: 900px) {
+    header .menu-desktop, header .imh-contato {
+        display: none;
+    }
+
+    header .btn-menu-mob {
+      display: block;
+      position: relative;
+      z-index: 999999999999999999999;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    /*RESPONSIVO DA HERO*/
+
+    .hero-imh .txt-imh h1 {
+        font-size: 2.6em;
+        line-height: 45px
+      }
+      
+      .hero-imh .txt-imh p{
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .hero-imh .txt-imh p span {
+        display: inline;
+      }
+      
+      .hero-imh button {
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      /*Responsivo das Vantagens*/
+      
+      .vantagens .itens-container {
+        flex-direction: column;
+      }
+      
+      .vantagens .itens-container .img-itens img {
+        width: 100%;
+      }
+
+      .vantagens .itens-container .txt-itens p {
+        margin-bottom: 20px;
+      }
+
+      .vantagens .itens-container .item-1 {
+        order: 0;
+      } 
+
+      .vantagens .itens-container .item-2 {
+        order: 1;
+      }
+
+      /*Estilo dos botões de contato*/
+      
+      .txt-contato, .icons-contato {
+        display: block;
+        width: 100%;
+      }
+      
+      .contato .txt-contato h3 {
+        font-size: 2em;
+        line-height: 40px;
+      }
+      
+      .contato .icons-contato button {
+        width: 100%;
+      }
+
+      .contato .txt-contato p {
+        margin-bottom: 20px;
+      }
+}
