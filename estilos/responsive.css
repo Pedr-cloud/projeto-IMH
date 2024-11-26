@@ -1,8 +1,15 @@
+
 @charset "UTF-8";
 
 @media screen and (max-width: 900px) {
     header .menu-desktop, header .imh-contato {
         display: none;
+    }
+
+    header .btn-menu-mob {
+      display: block;
+      position: relative;
+      z-index: 999999999999999999999;
     }
 }
 

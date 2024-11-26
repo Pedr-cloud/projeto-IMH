@@ -29,7 +29,7 @@ header .imh-contato button, .hero-imh button {
 /*Estilo do botão do menu mobile */
 
 header .btn-menu-mob {
- 
+  display: none;
   position: relative;
   z-index: 999999999999999999999;
 }
@@ -40,17 +40,14 @@ header .btn-menu-mob {
   margin: 10px 0;
   transition: .2s;
 }
-.btn-menu-mob .line-menumob-1{
+header .btn-menu-mob .line-menumob-1{
   width: 30px;
 }
-.btn-menu-mob .line-menumob-2{
+header .btn-menu-mob .line-menumob-2{
   width: 20px;
 }
 
 /* Estilo do menu mobile */
-
-
-
 .menu-mobile {
   width: 0;
   height: 0;
@@ -65,7 +62,7 @@ header .btn-menu-mob {
   text-align: center;
 
   overflow: hidden;
-  transition: .5s;
+  transition: .2s;
 }
 
 .menu-mobile nav {
@@ -82,7 +79,7 @@ header .btn-menu-mob {
   color: white;
   padding: 20px 0;
   display: block;
-  transition: .5s;
+  transition: .4s;
 }
 
 .menu-mobile nav a:hover {
@@ -155,6 +152,15 @@ header .imh-contato button:hover, .hero-imh button:hover {
 header .imh-contato button:hover {
   background-color: white;
   color: black;
+}
+
+.btn-menu-mob  .line-menumob-1.ativo1{
+  transform: rotate(45deg) translate(30%);
+}
+
+.btn-menu-mob  .line-menumob-2.ativo2{
+  transform: rotate(-45deg) translate(30%);
+  width: 30px;
 }
 
 /* Estilo do hero*/
@@ -286,10 +292,3 @@ section.hero-imh {
   color: #fff;
 }
 
-.btn-menu-mob  .line-menumob-1.ativo1{
-  transform: rotate(45deg) translate(30%);
-}
-.btn-menu-mob  .line-menumob-2.ativo2{
-  transform: rotate(-45deg) translate(30%);
-  width: 30px;
-}
