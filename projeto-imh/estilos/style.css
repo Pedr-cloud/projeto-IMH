@@ -102,9 +102,12 @@ body .no-overflow {
 /*Estilo do header */
 header{
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
   position: fixed;
-  background-color: #2D548F;
+  background-image: url('../imagens/nav.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   top: 0;
   left: 0;
 
@@ -311,4 +314,10 @@ section.hero-imh {
     color: #ca505c;
 }
 
-
+#imh {
+        position: absolute; /* Garante que a posição seja ajustável */
+        top: -0,20%; /* Ajuste esse valor para mover para a parte branca */
+        right: -0,6%; /* Ajuste para posicionar horizontalmente */
+        transform: translateY(-50%); /* Centraliza verticalmente */
+        z-index: 10; /* Garante que a logo fique acima de outros elementos */
+}
